@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:background="@color/green"
+            >
+            <TextView
+                android:layout_span="2"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="Các kiểu lập trình sự kiện"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_lager"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="@dimen/edt_margin_left">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Số a:"
+                android:textSize="@dimen/text_small"
+                android:gravity="center_vertical" />
+            <EditText
+                android:id="@+id/edt_soa"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginLeft="@dimen/edt_margin_left" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:text="Số b:"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/edt_sob"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:background="@color/green">
+
+            <TextView
+                android:id="@+id/txt_kq"
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Kết quả"
+                android:padding="@dimen/padding"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_lager"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/btn_tong"
+                android:layout_span="2"
+                android:text="Tổng 2 số"
+                android:textSize="@dimen/text_lager"
+                android:textAllCaps="false"
+                android:onClick="sum"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
+
